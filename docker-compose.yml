@@ -1,0 +1,17 @@
+node:
+  image: trufflesuite/ganache-cli:latest
+  ports:
+    - "8545:8545"
+  entrypoint:
+    - node
+    - /app/ganache-core.docker.cli.js
+    - -u
+    - '0x9759a6ac90977b93b58547b4a71c78317f391a28'
+    - -s
+    - '13371337'
+    - --networkId
+    - '4242'
+    - --hostname
+    - '0.0.0.0'
+    - --fork
+    - 'https://cloudflare-eth.com'

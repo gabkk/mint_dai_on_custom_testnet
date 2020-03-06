@@ -1,0 +1,36 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Alefbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabkk/discordBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabkk/discordBot/issues"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.31",
+    "chai": "^4.2.0",
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "ganache-cli": "^6.9.1",
+    "ganache-core": "^2.10.2",
+    "node-gyp": "^6.1.0",
+    "openzeppelin-test-helpers": "^0.5.1",
+    "rebuild": "^0.1.2",
+    "solc": "^0.6.3",
+    "truffle": "^5.1.14",
+    "web3": "^1.2.6"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "nodemon": "^2.0.2"
+  }
+}
