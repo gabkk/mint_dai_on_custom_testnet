@@ -8,7 +8,7 @@ You should have metamask installed and your fork network selected.
 To start your custom network you can use ganache-cli directly from the command line:
 
 ```
-ganache-cli -s '13371337' --netwkId '4242'  -h "0.0.0.0" -u "0x9759a6ac90977b93b58547b4a71c78317f391a28" --fork 'https://cloudflare-eth.com'
+ganache-cli -d --networkId '4242'  -h "0.0.0.0" -u "0x9759a6ac90977b93b58547b4a71c78317f391a28" --fork 'https://cloudflare-eth.com'
 ```
 
 Or in a docker-compose.yml file and start it in a container
@@ -24,8 +24,7 @@ node:
     - /app/ganache-core.docker.cli.js
     - -u
     - '0x9759a6ac90977b93b58547b4a71c78317f391a28'
-    - -s
-    - '13371337'
+    - -d
     - --networkId
     - '4242'
     - --hostname
